@@ -2,8 +2,6 @@ package com.skilldistillery.cannabis.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -17,8 +15,8 @@ public class Cannabis {
 
 	private String name;
 
-	@Enumerated(EnumType.STRING)
-	private Strain strain;
+	
+	private String strain;
 
 	@Column(name = "thc_percent")
 	private Double thcPercent;
@@ -36,9 +34,17 @@ public class Cannabis {
 	private String lineage;
 
 	private String description;
+	
+	public Cannabis() {}
 
-	public Cannabis() {
-		super();
+	public Cannabis(String name, String strain, double thc, double cbd, String effects, String desc) {
+		this.name  =name;
+		this.strain=strain;
+		this.thcPercent =thc;
+		this.cbdPercent=cbd;
+		this.effects=effects;
+		this.description=desc;
+		
 	}
 
 	public int getId() {
@@ -57,11 +63,13 @@ public class Cannabis {
 		this.name = name;
 	}
 
-	public Strain getStrain() {
+
+
+	public String getStrain() {
 		return strain;
 	}
 
-	public void setStrain(Strain strain) {
+	public void setStrain(String strain) {
 		this.strain = strain;
 	}
 

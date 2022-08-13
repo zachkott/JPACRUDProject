@@ -9,4 +9,8 @@ public interface CannabisDAO {
 	Cannabis findById(int id);
 
 	List<Cannabis> findAll();
+
+	Cannabis create(Cannabis cannabis);
+	
+	boolean delete(int  id);
 }

@@ -47,4 +47,9 @@ class CannabisTest {
 		assertEquals("Blue Dream", cannabis.getName());
 	}
 
+//	@Test
+//	void test_Cannabis_entity_successful_bud_creation() {
+//		assertNotNull(cannabis);
+//		assertEquals(null, null);
+//	}
 }
