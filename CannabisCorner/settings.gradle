@@ -1,0 +1,3 @@
+rootProject.name = 'CannabisCorner'
+
+includeFlat 'JPACannabis'
