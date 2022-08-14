@@ -23,6 +23,7 @@
 			<li>Lineage: ${bud.lineage}</li>
 			<li>Description: ${bud.description}</li>
 			
+			
 			<form action="deleteBud.do" method="GET" name="id">
 		<label for="deleteBud">ID: </label> <input type="text" name="id"
 			value="${bud.id}" placeholder="Delete by ID"> <input

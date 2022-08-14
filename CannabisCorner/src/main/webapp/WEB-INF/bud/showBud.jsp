@@ -42,7 +42,7 @@
 	</form>
 	<form action="index.do">
 	<input class ="btn btn-secondary" type="submit" value ="Home">
-	
+	</form>
 	</c:when>
 	
 	

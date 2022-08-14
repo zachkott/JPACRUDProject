@@ -30,6 +30,12 @@
 			<input class="btn btn-primary" type="submit" value="Add Bud" />
 		</div>
 	</form>
+	
+	<form action="showAllBud.do" method="GET">
+		<div class="form-group">
+			<input class="btn btn-primary" type="submit" value="Show All" />
+		</div>
+	</form>
 
 
 	

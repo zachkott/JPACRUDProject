@@ -90,5 +90,14 @@ public class CannabisController {
 		return "bud/showBud";
 
 	}
+	
+	@RequestMapping(path="showAllBud.do", method =RequestMethod.GET)
+	public String showAll( Model model) {
+		model.addAttribute("buds",cannaDAO.findAll()); 
 
-}
+		return "bud/showAll";
+	}
+	}
+	
+
+
