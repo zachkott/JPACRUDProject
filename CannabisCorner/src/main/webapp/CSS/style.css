@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body {
+	background-color:DarkOliveGreen;
+	
+}
+#missionstatement {
+	text-align: center;
+	font-family: "copperplate";
+	font-size:35px;
+}
+
+h1 {
+	color: black;
+	text-shadow: 0 0 5px #008080, 0 0 5px #FFFFFF;
+	text-align: center;
+	font-family: "copperplate";
+	
+}
+
+.form-control {
+	top: 6px;
+	left: 8px;
+	width: 300px;
+	
+}
+
+.form-group {
+	display: flex;
+	justify-content: center;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  background-color: lightgreen;
+}
+
+a:active {
+  background-color: hotpink;
+}
+
