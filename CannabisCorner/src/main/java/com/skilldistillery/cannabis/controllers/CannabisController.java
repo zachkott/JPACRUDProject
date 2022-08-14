@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.skilldistillery.cannabis.data.CannabisDAO;
 import com.skilldistillery.cannabis.entities.Cannabis;
@@ -35,22 +36,33 @@ public class CannabisController {
 	}
 
 	@RequestMapping(path = "addBud.do", method = RequestMethod.POST)
-	public String addABud(Cannabis bud, Model model) {
+	public ModelAndView addABud(Cannabis bud, Model model, RedirectAttributes redir) {
+		ModelAndView mv = new ModelAndView();
 		Cannabis thisBud = cannaDAO.create(bud);
+		boolean createdBud = thisBud.getId() > 0 ? true : false;
+		System.out.println(thisBud);
+		redir.addFlashAttribute("bud", bud);
+		redir.addFlashAttribute("createdBud", createdBud);
+		mv.setViewName("redirect:thisBudWasCreated.do");
+		return mv;
 
-		if (thisBud != null) {
-			model.addAttribute("bud", bud);
-			return "bud/confirmationStation";
-		} else {
+//		if (thisBud != null) {
+//			model.addAttribute("bud", new Cannabis());
+//
+//			return "bud/confirmationStation";
+//		} else {
 
-			return "bud/budForm";
-		}
+	}
+	@RequestMapping(path = "thisBudWasCreated.do", method = RequestMethod.GET)
+	public String budHasBeenAdded(Model model) {
+//		model.addAttribute("bud", new Cannabis());
+		return "bud/confirmationStation";
 
 	}
 
 	@RequestMapping(path = "addForm.do", method = RequestMethod.GET)
 	public String addABud(Model model) {
-		model.addAttribute("bud", new Cannabis());
+//		model.addAttribute("bud", new Cannabis());
 		return "bud/budForm";
 
 	}
