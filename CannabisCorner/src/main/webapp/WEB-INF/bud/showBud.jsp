@@ -26,8 +26,8 @@
 		</ul>
 	</div>
 
-	<form action="deleteBud.do" method="GET">
-		<label for="deleteBud"> ID:</label> <input type="text" name="BudId"
+	<form action="deleteBud.do" method="GET"name="id">
+		<label for="deleteBud"> ID:</label> <input type="text" name="id"
 			value="${bud.id}" placeholder="Delete by ID"> <input
 			class="btn btn-secondary" type="submit" value="Delete This Bud">
 	</form>

@@ -17,9 +17,9 @@
 			<label
 				for="strain">Strain:</label> 
 				<select name="strain">
-				<option value=1>Sativa</option>
-				<option value=2>Indica</option>
-				<option value=3>Hybrid</option>
+				<option value="Sativa">Sativa</option>
+				<option value="Indica">Indica</option>
+				<option value="Hybrid">Hybrid</option>
 			
 				
 				</select><br>
@@ -37,7 +37,7 @@
 			<input type="text" name="commonUsage" > <!--can only enter numbers  -->
 			<br> 
 			<label for="origin">Origin:</label>
-			<input type="text" name="orogin" > <!--can only enter numbers  -->
+			<input type="text" name="origin" > <!--can only enter numbers  -->
 			<br> 
 			<label for="lineage">Lineage:</label>
 			<input type="text" name="lineage" > <!--can only enter numbers  -->

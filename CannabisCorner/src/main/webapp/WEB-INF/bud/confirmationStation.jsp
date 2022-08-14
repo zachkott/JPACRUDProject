@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Confirmation Page</title>
 </head>
 <body>
 <c:choose>
@@ -23,37 +23,27 @@
 			<li>Lineage: ${bud.lineage}</li>
 			<li>Description: ${bud.description}</li>
 			
-			<form action="deleteBud.do" method="GET">
-		<label for="deleteBud">ID: </label> <input type="text" name="BudId"
+			<form action="deleteBud.do" method="GET" name="id">
+		<label for="deleteBud">ID: </label> <input type="text" name="id"
 			value="${bud.id}" placeholder="Delete by ID"> <input
 			class="btn btn-secondary" type="submit" value="Delete This Bud">
-	</form>
-		<%-- <form action="deleteFilm.do" method="GET">
-			<label for="deleteFilm"> </label> <input type="text"
-				name="filmId" value="${film.filmId}" placeholder="Delete by ID"> 
-				<input class="btn btn-secondary" type="submit" value="Delete Film">
-				
-		</form><br>
+			<br>
 		
-		<form action="editFilmForm.do" method="GET">
-			<label for="editFilm"> </label> <input type="text"
-				name="filmId" value="${film.filmId}" placeholder="Update by ID"> 
-				<input class="btn btn-secondary" type="submit" value="Update Film">
-				
-		</form>
-			<form action="home.do">
-			<input class="btn btn-secondary" type="submit" value="Home">
-			
-			</form> --%>
+	</form>
+	
+	<form action="index.do">
+				<input class="btn btn-secondary" type="submit" value="Home">
+			</form>
+
 		</c:when>
-		<%-- <c:otherwise> --%>
-	<%-- 		<h3>Unable to Create Film Loser</h3>
-			<form action="home.do">
+		<c:otherwise>
+			<h3>Unable to Create Bud </h3>
+			<form action="index.do">
 			<input class="btn btn-secondary" type="submit" value="Home">
 			
 			</form>
 		</c:otherwise>
- --%>
+
 
 	</c:choose>
 

@@ -12,5 +12,5 @@ public interface CannabisDAO {
 
 	Cannabis create(Cannabis cannabis);
 	
-	boolean delete(int  id);
+	Cannabis delete(int  id);
 }

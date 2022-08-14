@@ -32,10 +32,6 @@
 	</form>
 
 
-	<form action="deleteForm.do">
-		<div class="form-group">
-			<input class="btn btn-primary" type="submit" value="Delete Bud" />
-		</div>
-	</form>
+	
 </body>
 </html>

@@ -3,7 +3,6 @@ package com.skilldistillery.cannabis.data;
 import java.util.List;
 
 import javax.persistence.EntityManager;
-
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
 
@@ -46,18 +45,17 @@ public class CannabisDAOImpl implements CannabisDAO {
 	}
 
 	@Override
-	public boolean delete(int id) {
+	public Cannabis delete(int id) {
 		Cannabis budToBeDeleted = em.find(Cannabis.class, id);
-		boolean successfulKickOut = false;
+		
 
-		if (budToBeDeleted != null) {
+		
 
 			em.remove(budToBeDeleted);
 
-		}
-		successfulKickOut = !em.contains(budToBeDeleted);
+	
 
-		return successfulKickOut;
+		return budToBeDeleted;
 	}
 
 }
