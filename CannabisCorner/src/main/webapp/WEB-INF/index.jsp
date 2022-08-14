@@ -20,7 +20,7 @@
 
 	<form action="getBud.do" method="GET">
 		<div class="form-group">
-			Cannabis ID: <input class="form-control" type="text" name="cid" /> <input
+			Cannabis ID: <input class="form-control" type="text" name="cid" required> <input
 				class="btn btn-primary" type="submit" value="Show Bud" />
 		</div>
 	</form>

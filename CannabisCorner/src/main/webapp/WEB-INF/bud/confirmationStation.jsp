@@ -28,7 +28,12 @@
 			value="${bud.id}" placeholder="Delete by ID"> <input
 			class="btn btn-secondary" type="submit" value="Delete This Bud">
 			<br>
+		</form>
 		
+		<form action="updateBudForm.do" method="GET"name="id">
+		<label for="updateBud"> ID:</label> <input type="text" name="id"
+			value="${bud.id}" placeholder="Delete by ID"> <input
+			class="btn btn-secondary" type="submit" value="Update Bud Info">
 	</form>
 	
 	<form action="index.do">

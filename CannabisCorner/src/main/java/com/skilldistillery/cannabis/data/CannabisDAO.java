@@ -13,4 +13,6 @@ public interface CannabisDAO {
 	Cannabis create(Cannabis cannabis);
 	
 	Cannabis delete(int  id);
+	
+	Cannabis update(int  id, Cannabis cannabis);
 }

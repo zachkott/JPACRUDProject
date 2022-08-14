@@ -17,13 +17,6 @@ public class CannabisDAOImpl implements CannabisDAO {
 	@PersistenceContext
 	private EntityManager em;
 
-	public static void main(String[] args) {
-		CannabisDAOImpl crudTest = new CannabisDAOImpl();
-		Cannabis budTest = new Cannabis("test", "indica", 20.0, 0.3, "uplifting", "best  bud in the world");
-		crudTest.create(budTest);
-
-	}
-
 	@Override
 	public Cannabis findById(int id) {
 
@@ -47,15 +40,27 @@ public class CannabisDAOImpl implements CannabisDAO {
 	@Override
 	public Cannabis delete(int id) {
 		Cannabis budToBeDeleted = em.find(Cannabis.class, id);
-		
 
-		
-
-			em.remove(budToBeDeleted);
-
-	
+		em.remove(budToBeDeleted);
 
 		return budToBeDeleted;
+	}
+
+	@Override
+	public Cannabis update(int id, Cannabis bud) {
+		Cannabis updatedBud = em.find(Cannabis.class, id);
+
+		updatedBud.setName(bud.getName());
+		updatedBud.setStrain(bud.getStrain());
+		updatedBud.setThcPercent(bud.getThcPercent());
+		updatedBud.setCbdPercent(bud.getCbdPercent());
+		updatedBud.setEffects(bud.getEffects());
+		updatedBud.setCommonUsage(bud.getCommonUsage());
+		updatedBud.setOrigin(bud.getOrigin());
+		updatedBud.setLineage(bud.getLineage());
+		updatedBud.setDescription(bud.getDescription());
+
+		return updatedBud;
 	}
 
 }

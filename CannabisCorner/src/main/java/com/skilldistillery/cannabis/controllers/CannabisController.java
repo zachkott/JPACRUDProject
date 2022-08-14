@@ -74,7 +74,20 @@ public class CannabisController {
 		} else {
 			return "index";
 		}
-		
+
+	}
+
+	@RequestMapping(path = "updateBudForm.do")
+	public String updateBudForm(int id, Cannabis bud, Model model) {
+		model.addAttribute("bud", cannaDAO.findById(id));
+		return "bud/updateBud";
+	}
+
+	@RequestMapping(path = "updateBud.do", method = RequestMethod.POST)
+	public String updateBud(int id, Cannabis bud, Model model) {
+		cannaDAO.update(id, bud);
+		model.addAttribute("bud", bud);
+		return "bud/showBud";
 
 	}
 
