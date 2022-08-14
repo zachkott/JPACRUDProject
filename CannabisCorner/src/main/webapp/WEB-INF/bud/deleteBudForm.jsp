@@ -4,9 +4,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Delete Bud</title>
 </head>
 <body>
+
+<h1>Delete A Bud</h1>
+<form action="deleteBud.do" method="GET">
+		<label for="deleteBud"> </label> <input type="text" name="BudId"
+			value="${bud.id}" placeholder="Delete by ID"> <input
+			class="btn btn-secondary" type="submit" value="Submit">
+	</form>
 
 </body>
 </html>

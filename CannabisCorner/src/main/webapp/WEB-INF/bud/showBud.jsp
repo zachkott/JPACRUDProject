@@ -12,18 +12,24 @@
 	<h1>Bud Profile</h1>
 
 	<div>
-			<h2>${bud.name}</h2>
+		<h2>${bud.name}</h2>
 		<ul>
-				<li>Strain: ${bud.strain}</li>
-				<li>THC: ${bud.thcPercent}%</li>
-				<li>CBD: ${bud.cbdPercent}%</li>
-				<li>Effects: ${bud.effects}</li>
-				<li>Common Usage: ${bud.commonUsage}</li>
-				<li>Origin: ${bud.origin}</li>
-				<li>Lineage: ${bud.lineage}</li>
-				<li>Description: ${bud.description}</li>
+			<li>ID: ${bud.id}</li>
+			<li>Strain: ${bud.strain}</li>
+			<li>THC: ${bud.thcPercent}%</li>
+			<li>CBD: ${bud.cbdPercent}%</li>
+			<li>Effects: ${bud.effects}</li>
+			<li>Common Usage: ${bud.commonUsage}</li>
+			<li>Origin: ${bud.origin}</li>
+			<li>Lineage: ${bud.lineage}</li>
+			<li>Description: ${bud.description}</li>
 		</ul>
 	</div>
 
+	<form action="deleteBud.do" method="GET">
+		<label for="deleteBud"> ID:</label> <input type="text" name="BudId"
+			value="${bud.id}" placeholder="Delete by ID"> <input
+			class="btn btn-secondary" type="submit" value="Delete This Bud">
+	</form>
 </body>
 </html>

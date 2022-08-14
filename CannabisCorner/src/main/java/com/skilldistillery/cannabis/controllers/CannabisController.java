@@ -22,6 +22,11 @@ public class CannabisController {
 		return "index";
 	}
 
+	@RequestMapping(path = "deleteForm.do")
+	public String delete(Model model) {
+		return "bud/deleteBudForm";
+	}
+
 	@RequestMapping(path = "getBud.do")
 	public String getBud(int cid, Model model) {
 		Cannabis thisBud = cannaDAO.findById(cid);
@@ -50,7 +55,7 @@ public class CannabisController {
 
 	}
 
-	@RequestMapping(path = "deleteBud.do")
+	@RequestMapping(path = "deleteBud.do", method = RequestMethod.GET)
 	public String deleteBud(int id, Model model) {
 		boolean budWasDeleted = cannaDAO.delete(id);
 
@@ -61,7 +66,7 @@ public class CannabisController {
 		if (budWasDeleted) {
 			return "bud/confirmationStation";
 		} else {
-			model.addAttribute("error","Bud ID does not exist");
+			model.addAttribute("error", "Bud ID does not exist");
 			return "bud/deleteBudForm";
 
 		}
