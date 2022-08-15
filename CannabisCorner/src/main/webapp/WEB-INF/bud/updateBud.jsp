@@ -49,15 +49,15 @@
 	rel="stylesheet"
 	integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
 	crossorigin="anonymous">
-<link rel="stylesheet" href="CSS/style.css">
+<link rel="stylesheet" href="CSS/addForm.css">
 </head>
 <body>
 <h1>Update Bud Info</h1>
 
 
-	
-	<form action="updateBud.do" method="POST">
-	<input type ="hidden" name ="id" value="${bud.id}">
+<div class="form-row">
+		<form action="updateBud.do" method="POST">
+			<input type ="hidden" name ="id" value="${bud.id}">
 			<label for="name">Name of Strain:</label> 
 			<input type="text" name="name" value="${bud.name}"required="true"> 
 			<br>
@@ -72,32 +72,40 @@
 				</select><br>
 				
 		    <label for="thcPercent">THC %:</label> 
-		    <input type="text"  onkeypress="return (event.charCode !=8 && event.charCode ==0 || ( event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)))" name="thcPercent" value="${bud.thcPercent}"required> <!-- can only enter numbers -->
+		    <input type="text" onkeypress="return (event.charCode !=8 && event.charCode ==0 || ( event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)))" name="thcPercent" value="${bud.thcPercent}" required> <!-- can only enter numbers -->
 			<br>
 			<label for="cbdPercent">CBD %:</label> 
-			<input type="text" onkeypress="return (event.charCode !=8 && event.charCode ==0 || ( event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)))" name="cbdPercent" value="${bud.cbdPercent}"required> <!--can only enter numbers and decimals  -->
+			<input type="text" onkeypress="return (event.charCode !=8 && event.charCode ==0 || ( event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)))" name="cbdPercent"  value="${bud.cbdPercent}" required> <!--can only enter numbers and decimals  -->
 			<br> 
 			<label for="effects">Effects:</label>
-			<input type="text" name="effects" value="${bud.effects}"required > 
+			<input type="text" name="effects" value="${bud.effects}" required > <!--can only enter numbers  -->
 			<br> 
 			<label for="commonUsage">Common Usage:</label>
-			<input type="text" name="commonUsage" value="${bud.commonUsage}" required > 
+			<input type="text" name="commonUsage" value="${bud.commonUsage}"> <!--can only enter numbers  -->
 			<br> 
 			<label for="origin">Origin:</label>
-			<input type="text" name="origin" value="${bud.origin}" required> 
+			<input type="text" name="origin" value="${bud.origin}" > <!--can only enter numbers  -->
 			<br> 
 			<label for="lineage">Lineage:</label>
-			<input type="text" name="lineage"value="${bud.lineage}" required> <!--can only enter numbers  -->
+			<input type="text" name="lineage" value="${bud.lineage}" > <!--can only enter numbers  -->
 			<br> 
 			<label for="description">Description:</label>
-			<textarea name="description"  value="${bud.description}" required></textarea>
+			<textarea name="description" value="${bud.description}"></textarea>
+			<br>
+			<label for="image">Image URL:</label>
+			<textarea name="image"></textarea>
+			
 			<br>
 
-			<input class="btn btn-secondary" type="submit" value="Update Bud">
+			<input class="btn btn-success" type="submit" value="Add Bud">
 
 
 
 		</form>
+</div>
+
+
+
 
 </body>
 </html>
