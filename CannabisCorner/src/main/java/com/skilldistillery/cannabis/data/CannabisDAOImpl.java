@@ -61,6 +61,6 @@ public class CannabisDAOImpl implements CannabisDAO {
 		updatedBud.setDescription(bud.getDescription());
 
 		return updatedBud;
-	}
+	} 
 
 }

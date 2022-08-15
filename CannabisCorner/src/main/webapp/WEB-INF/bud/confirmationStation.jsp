@@ -59,6 +59,8 @@
 <c:choose>
 		<c:when test="${createdBud}">
 			<h1>Created Bud!</h1>
+			<img src="${bud.image}"width="250" height="250" class="canter"/>
+			
 			<li>ID: ${bud.id}</li>
 			<li>Name: ${bud.name}</li>
 			<li>Strain: ${bud.strain}</li>

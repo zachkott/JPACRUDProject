@@ -43,8 +43,10 @@ class CannabisTest {
 	@Test
 	void test_Cannabis_entity_mapping() {
 		assertNotNull(cannabis);
-		assertEquals("Sativa", cannabis.getStrain());
+		assertEquals("Hybrid", cannabis.getStrain());
 		assertEquals("Blue Dream", cannabis.getName());
+		assertEquals(27.0, cannabis.getThcPercent());
+		assertEquals(2.0, cannabis.getCbdPercent());
 	}
 
 //	@Test

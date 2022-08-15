@@ -43,11 +43,6 @@ public class CannabisController {
 		mv.setViewName("redirect:thisBudWasCreated.do");
 		return mv;
 
-//		if (thisBud != null) {
-//			model.addAttribute("bud", new Cannabis());
-//
-//			return "bud/confirmationStation";
-//		} else {
 
 	}
 

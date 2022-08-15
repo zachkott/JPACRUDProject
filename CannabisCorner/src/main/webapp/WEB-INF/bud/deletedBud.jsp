@@ -56,11 +56,11 @@
 <body>
 
 
-
+<c:choose>
+<c:when test="${! empty bud}">
 
 	
 			<h1>Bud Removed ${bud.id}</h1>
-		<%-- 	<h2>Id: ${id}</h2> --%>
 			<h2>Name: ${bud.name}</h2>
 	<ul>
 		<li>Strain: ${bud.strain}</li>
@@ -72,18 +72,16 @@
 		<li>Lineage: ${bud.lineage}</li>
 		<li>Description: ${bud.description}</li>
 	</ul>
-	<form action="index.do">
-				<input class="btn btn-secondary" type="submit" value="Home">
-			</form>
+	
 		
+	</c:when>
 
-	<%-- 	<c:otherwise>
+		<c:otherwise>
 			<h1>Unable to Delete Bud</h1>
-			<form action="index.do">
-				<input class="btn btn-secondary" type="submit" value="Home">
-			</form>
 
-		</c:otherwise> --%>
+		</c:otherwise> 
+			</c:choose>
+		
 
 
 

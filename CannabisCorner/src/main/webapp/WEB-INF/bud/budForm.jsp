@@ -90,6 +90,10 @@
 			<label for="description">Description:</label>
 			<textarea name="description"></textarea>
 			<br>
+			<label for="image">Image URL:</label>
+			<textarea name="image"></textarea>
+			
+			<br>
 
 			<input class="btn btn-success" type="submit" value="Add Bud">
 
