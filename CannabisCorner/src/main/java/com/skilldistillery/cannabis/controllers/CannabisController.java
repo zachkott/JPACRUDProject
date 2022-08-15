@@ -16,6 +16,8 @@ public class CannabisController {
 
 	@Autowired
 	private CannabisDAO cannaDAO;
+	
+	
 
 	@RequestMapping(path = { "/", "index.do" })
 	public String index(Model model) {

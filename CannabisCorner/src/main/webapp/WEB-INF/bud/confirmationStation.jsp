@@ -4,8 +4,45 @@
     <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>   
 <!DOCTYPE html>
 <html>
-<div id=missionstatement class="text-bg-dark p-3">Cannabis | People | Coffee | Jazz</div>
-
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><h4>Canna Club</h4></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+      <form action="index.do">
+	<input class ="btn btn-success" type="submit" value ="Home">
+	</form>
+      </li>
+      <li class="nav-item">
+        <form action="addForm.do" method="GET">
+		<div class="form-group">
+			<input class="btn btn-success" type="submit" value="Add Bud" />
+		</div>
+	</form>
+      </li>
+      <li class="nav-item">
+      <form action="showAllBud.do" method="GET">
+		<div class="form-group">
+			<input class="btn btn-success" type="submit" value="Show All" />
+		</div>
+	</form>
+      
+      </li>
+    </ul>
+   <br>  
+    <span class="navbar-text">
+    				 Cannabis | Comedy | Coffee | Jazz
+    </span>
+    
+  </div>
+<form action ="getBud.do"class="form-inline">
+    <input class="form-control" type="text" name="cid" required>
+    <button class="btn btn-success" type="submit">Find Bud</button>
+  </form>
+</nav>
 <head>
 <meta charset="UTF-8">
 
@@ -37,25 +74,25 @@
 			<form action="deleteBud.do" method="GET" name="id">
 		<label for="deleteBud">ID: </label> <input type="text" name="id"
 			value="${bud.id}" placeholder="Delete by ID"> <input
-			class="btn btn-secondary" type="submit" value="Delete This Bud">
+			class="btn btn-danger" type="submit" value="Delete This Bud">
 			<br>
 		</form>
 		
 		<form action="updateBudForm.do" method="GET"name="id">
 		<label for="updateBud"> ID:</label> <input type="text" name="id"
 			value="${bud.id}" placeholder="Delete by ID"> <input
-			class="btn btn-secondary" type="submit" value="Update Bud Info">
+			class="btn btn-warning" type="submit" value="Update Bud Info">
 	</form>
 	
 	<form action="index.do">
-				<input class="btn btn-secondary" type="submit" value="Home">
+				<input class="btn btn-success" type="submit" value="Home">
 			</form>
 
 		</c:when>
 		<c:otherwise>
 			<h3>Unable to Create Bud </h3>
 			<form action="index.do">
-			<input class="btn btn-secondary" type="submit" value="Home">
+			<input class="btn btn-success" type="submit" value="Home">
 			
 			</form>
 		</c:otherwise>

@@ -1,12 +1,12 @@
 @charset "UTF-8";
-
 body {
 	
- 	background-image: url("https://img.freepik.com/free-vector/botanical-cannabis-leaf-wallpaper-with-empty-space_52683-51644.jpg?w=2000");
+ 	
+	background-image: url("https://images.ctfassets.net/zkw0qlnf0vqv/psycom_page_fid33047_asset_33040/1ea60296edb30f6055b7d809e16177e9/marijuana_cannabis_leaf_background?fm=webp&fit=thumb&q=65&w=864&h=576");
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 700px;
-	background-size: auto;
+	height:650px;
+	background-size: cover;
  
 }
 #missionstatement {
@@ -16,56 +16,37 @@ body {
 }
 
 h1 {
-	color: black;
+	/* color: black;
 	text-shadow: 0 0 5px #008080, 0 0 5px #FFFFFF;
 	text-align: center;
 	font-family: "copperplate";
 	font-size:55px;
-	
-	
-}
-h2{
-	color: black;
-	text-shadow: 0 0 5px #FFD700, 0 0 5px #FFFFFF;
+	 */
+	 	color: Gold;
+	text-shadow: 0 0 5px #008080, 0 0 5px #FFFFFF;
 	text-align: center;
-	font-family: "copperplate";
-	font-size:35px;
+	font-size:120px;
+	font-family: "Audiowide", sans-serif;
 	
 }
+
+
 h4{
 	color:white;
 	text-shadow: 0 0 5px #008080, 0 0 5px #FFFFFF;
 	font-size:15px;
 	font-family:"Great Vibes";
 		text-align: center;
+	
 }
-img{
-	display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height:310px;
-  width: 30%
-}
-
-
-li{
+.navbar-brand{
 	color:white;
-	text-shadow: 0 0 20px #000000, 0 0 5px #FFFFFF;
+	text-shadow: 0 0 5px #008080, 0 0 5px #FFFFFF;
+	font-size:15px;
+	font-family:"Great Vibes";
 	text-align: center;
-	font-family: "copperplate";
-	font-size:19px;
-	
 }
-
-.form-control {
-	top: 6px;
-	left: 8px;
-	width: 200px;
-	
-}
-
 .navbar-nav > li{
-	
   padding-left:10px;
   padding-right:10px;
 }
@@ -79,12 +60,20 @@ span{
 	font-size:35px;
 } 
 
+.form-control {
+	top: 6px;
+	left: 8px;
+	width: 100px;
+	
+}
+
 .form-group {
 	display: flex;
 	justify-content: center;
 }
 
-
-
-
-
+h3{
+	color: white;
+	font-family: "copperplate";
+	font-size:27px;
+}

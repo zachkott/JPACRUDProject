@@ -2,6 +2,45 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><h4>Canna Club</h4></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+      <form action="index.do">
+	<input class ="btn btn-success" type="submit" value ="Home">
+	</form>
+      </li>
+      <li class="nav-item">
+        <form action="addForm.do" method="GET">
+		<div class="form-group">
+			<input class="btn btn-success" type="submit" value="Add Bud" />
+		</div>
+	</form>
+      </li>
+      <li class="nav-item">
+      <form action="showAllBud.do" method="GET">
+		<div class="form-group">
+			<input class="btn btn-success" type="submit" value="Show All" />
+		</div>
+	</form>
+      
+      </li>
+    </ul>
+   <br>  
+    <span class="navbar-text">
+    				 Cannabis | Comedy | Coffee | Jazz
+    </span>
+    
+  </div>
+<form action ="getBud.do"class="form-inline">
+    <input class="form-control" type="text" name="cid" required>
+    <button class="btn btn-success" type="submit">Find Bud</button>
+  </form>
+</nav>
 <head>
 <meta charset="UTF-8">
 <title>Add Bud</title>
@@ -58,6 +97,10 @@
 
 		</form>
 	</div>
-
+	
+	<form action="index.do">
+		<input class ="btn btn-success" type="submit" value ="Home">
+	</form>
+	
 </body>
 </html>

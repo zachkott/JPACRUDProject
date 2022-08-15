@@ -1,0 +1,72 @@
+@charset "UTF-8";
+body {
+	
+ 	background-image: url("https://images.unsplash.com/photo-1612153018787-4899c6e056d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YnJpZ2h0JTIwZ3JlZW58ZW58MHx8MHx8&w=1000&q=80");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+ 
+}
+
+
+h1 {
+	color: black;
+	text-shadow: 0 0 5px #008080, 0 0 5px #FFFFFF;
+	text-align: center;
+	font-family: "copperplate";
+	font-size:55px;
+	
+	
+}
+
+h4{
+	color:white;
+	text-shadow: 0 0 5px #008080, 0 0 5px #FFFFFF;
+	font-size:15px;
+	font-family:"Great Vibes";
+		text-align: center;
+}
+.navbar-nav > li{
+  padding-left:10px;
+  padding-right:10px;
+}
+
+
+span{
+	padding-left:250px;
+  	padding-right:30px;
+	text-align: center;
+	font-family: "copperplate";
+	font-size:35px;
+} 
+
+.form-control {
+	top: 6px;
+	left: 8px;
+	width: 100px;
+	
+}
+
+.form-group {
+	display: flex;
+	justify-content: center;
+}
+
+
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  background-color: white;
+}
+
+a:active {
+  background-color: hotpink;
+}
+

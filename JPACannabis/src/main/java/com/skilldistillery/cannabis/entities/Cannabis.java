@@ -35,6 +35,9 @@ public class Cannabis {
 
 	private String description;
 	
+	private String image;
+	
+	
 	public Cannabis() {}
 
 	public Cannabis(String name, String strain, double thc, double cbd, String effects, String desc) {
@@ -129,6 +132,14 @@ public class Cannabis {
 		this.description = description;
 	}
 
+	public String getImage() {
+		return image;
+	}
+
+	public void setImage(String image) {
+		this.image = image;
+	}
+
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
@@ -152,6 +163,8 @@ public class Cannabis {
 		builder.append(lineage);
 		builder.append(", description=");
 		builder.append(description);
+		builder.append(", image=");
+		builder.append(image);
 		builder.append("]");
 		return builder.toString();
 	}
