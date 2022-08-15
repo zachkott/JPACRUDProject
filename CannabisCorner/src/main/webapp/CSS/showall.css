@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body {
 	
- 	background-image: url("https://images.unsplash.com/photo-1612153018787-4899c6e056d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YnJpZ2h0JTIwZ3JlZW58ZW58MHx8MHx8&w=1000&q=80");
+ 	background-image: url("https://marketplace.canva.com/EAEthkBVLfQ/1/0/1600w/canva-blush-wave-desktop-wallpaper-drvq3zaYl2E.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -51,15 +51,23 @@ span{
 	display: flex;
 	justify-content: center;
 }
+td{
+	color:white;
+	font-weight: bold;
+	text-shadow: 0 0 1px #008080, 0 0 1px #FFFFFF;
+	font-size:20px;
+	font-family:"Great Vibes";
+		
+}
 
 
 
 a:link {
-  color: black;
+  color: white;
 }
 
 a:visited {
-  color: purple;
+  color: green;
 }
 
 a:hover {

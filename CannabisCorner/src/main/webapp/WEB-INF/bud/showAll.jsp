@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#"><h4>Canna Club</h4></a>
+  <a class="navbar-brand" href="https://www.jazzradio.com/"><h4>Canna Club</h4></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -67,6 +67,9 @@
 				<th>Name</th>
 				<th>Strain</th>
 				<th>THC %</th>
+				<th>CBD %</th>
+				
+				
 			</tr>
 		</thead>
 		<tbody>
@@ -77,6 +80,8 @@
 					<td><a href="getBud.do?cid=${bud.id}">${bud.name}</a></td>
 					<td><a href="getBud.do?cid=${bud.id}">${bud.strain}</a></td>
 					<td><a href="getBud.do?cid=${bud.id}">${bud.thcPercent}</a></td>
+					<td><a href="getBud.do?cid=${bud.id}">${bud.cbdPercent}</a></td>
+					
 					
 					
 				</tr>

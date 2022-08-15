@@ -1,12 +1,11 @@
 @charset "UTF-8";
-
 body {
 	
- 	background-image: url("https://img.freepik.com/free-vector/botanical-cannabis-leaf-wallpaper-with-empty-space_52683-51644.jpg?w=2000");
+ 	background-image: url("https://media.istockphoto.com/vectors/leaves-frame-vector-id177492461?k=20&m=177492461&s=170667a&w=0&h=5bxc6h4vr9qaxfj7lpdZeOUS5WF4D5HeOnu_la-EqaI=");
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 700px;
-	background-size: auto;
+	background-size: cover;
  
 }
 #missionstatement {
@@ -83,6 +82,14 @@ span{
 	display: flex;
 	justify-content: center;
 }
+.form-row{
+		color: black;
+	text-shadow: 0 0 5px #FFD700, 0 0 5px #FFFFFF;
+	text-align: center;
+	font-family: "copperplate";
+	font-size:35px;
+	
+}
 
 p{
 	color: black;
@@ -91,8 +98,3 @@ p{
 	font-family: "copperplate";
 	font-size:35px;
 }
-
-
-
-
-

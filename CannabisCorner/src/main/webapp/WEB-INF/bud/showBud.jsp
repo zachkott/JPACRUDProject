@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#"><h4>Canna Club</h4></a>
+  <a class="navbar-brand" href="https://www.jazzradio.com/"><h4>Canna Club</h4></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -86,19 +86,12 @@
 		<label for="updateBud"> ID:</label> <input type="text" name="id"
 			value="${bud.id}" placeholder="Delete by ID"> <input
 			class="btn btn-warning" type="submit" value="Update Bud Info">
-	</form>
-	<form action="index.do">
-	<input class ="btn btn-success" type="submit" value ="Home">
-	</form>
+	
 	</c:when>
 	
 	
 	<c:otherwise>
-	<p>Bud Not Found</p>
-	<form action="index.do">
-	<input class ="btn btn-secondary" type="submit" value ="Back">
-	</form>
-	
+	<h2>Bud Not Found</h2>
 	</c:otherwise>
 	</c:choose>
 	</div>

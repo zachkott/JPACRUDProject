@@ -5,15 +5,11 @@ body {
 	background-image: url("https://images.ctfassets.net/zkw0qlnf0vqv/psycom_page_fid33047_asset_33040/1ea60296edb30f6055b7d809e16177e9/marijuana_cannabis_leaf_background?fm=webp&fit=thumb&q=65&w=864&h=576");
 	background-position: center;
 	background-repeat: no-repeat;
-	height:650px;
+	height:740px;
 	background-size: cover;
  
 }
-#missionstatement {
-	text-align: center;
-	font-family: "copperplate";
-	font-size:35px;
-}
+
 
 h1 {
 	/* color: black;

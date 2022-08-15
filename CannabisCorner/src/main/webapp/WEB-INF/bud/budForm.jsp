@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#"><h4>Canna Club</h4></a>
+  <a class="navbar-brand" href="https://www.jazzradio.com/"><h4>Canna Club</h4></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -49,12 +49,12 @@
 	rel="stylesheet"
 	integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
 	crossorigin="anonymous">
-<link rel="stylesheet" href="CSS/style.css">
+<link rel="stylesheet" href="CSS/addForm.css">
 </head>
 <body>
 <h1>Add A Bud</h1>
 
-<div>
+<div class="form-row">
 		<form action="addBud.do" method="POST">
 			<label for="name">Name of Strain:</label> 
 			<input type="text" name="name"required="true"> 
@@ -91,16 +91,14 @@
 			<textarea name="description"></textarea>
 			<br>
 
-			<input class="btn btn-secondary" type="submit" value="Add Bud">
+			<input class="btn btn-success" type="submit" value="Add Bud">
 
 
 
 		</form>
-	</div>
+</div>
 	
-	<form action="index.do">
-		<input class ="btn btn-success" type="submit" value ="Home">
-	</form>
+	
 	
 </body>
 </html>
